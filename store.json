@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "users": [
+    {
+      "id": "5a1e123a-c335-4d01-a43f-7d02202da9b3",
+      "displayName": "AeroBox Team",
+      "handle": "team",
+      "email": "team@aerobox.com",
+      "passwordHash": "a68349561396ec264a350847024a4521d00beaa3358660c2709a80f31c7acdd0",
+      "bio": "Official AeroBox workspace account",
+      "theme": "light",
+      "accent": "#0a84ff",
+      "createdAt": "2026-05-24T02:20:55.644Z"
+    },
+    {
+      "id": "bb33f185-bca3-4c8f-866c-aa6aac81d8c1",
+      "displayName": "Demo Pilot",
+      "handle": "demo",
+      "email": "demo@aerobox.com",
+      "passwordHash": "pbkdf2$120000$1f4fa91b94525c48500f89757bf7b4e5$06443ccd91ddee01de3626dce45691c403a21122c404fbf3269aa0e25cb7d5f0",
+      "bio": "Try the premium AeroBox mail experience",
+      "theme": "light",
+      "accent": "#0a84ff",
+      "createdAt": "2026-05-24T02:20:55.645Z"
+    },
+    {
+      "id": "9edaf015-1702-44be-b7b6-fd292a1f533e",
+      "displayName": "Test User",
+      "handle": "testuserx",
+      "email": "testuserx@aerobox.com",
+      "passwordHash": "937e8d5fbb48bd4949536cd65b8d35c426b80d2f830c5c308e2cdec422ae2244",
+      "bio": "",
+      "theme": "light",
+      "accent": "#0a84ff",
+      "createdAt": "2026-05-24T02:23:34.714Z"
+    },
+    {
+      "id": "4dd3aeb7-6276-4798-9817-bda7efa1091c",
+      "displayName": "Rutuj Morey",
+      "handle": "rutujmorey7",
+      "email": "rutujmorey7@aerobox.com",
+      "passwordHash": "pbkdf2$120000$e5706bef7aa2d5f2a21ec8d90e481421$7585f2e7a403bc3cc8b4caec7ef3503d48ab5c9aff20065d2d27a41c57e8edfd",
+      "bio": "",
+      "theme": "light",
+      "accent": "#0a84ff",
+      "createdAt": "2026-05-24T02:23:44.057Z",
+      "updatedAt": "2026-05-24T03:14:14.284Z"
+    },
+    {
+      "id": "2c49f061-269a-496a-b57b-bfae07dd091d",
+      "displayName": "Test Two",
+      "handle": "testtwox",
+      "email": "testtwox@aerobox.com",
+      "passwordHash": "937e8d5fbb48bd4949536cd65b8d35c426b80d2f830c5c308e2cdec422ae2244",
+      "bio": "",
+      "theme": "light",
+      "accent": "#0a84ff",
+      "createdAt": "2026-05-24T02:26:37.498Z"
+    },
+    {
+      "id": "5ecb5034-cc2c-4089-82e8-9e3c17393e83",
+      "displayName": "Xyx",
+      "handle": "xys",
+      "email": "xys@aerobox.com",
+      "passwordHash": "pbkdf2$120000$8f47211572a396bee529dcf24a249ada$10dae78dd9e8488a7493cef9dadeccccffb51a01d1b8c71498a4943c3094a6eb",
+      "bio": "",
+      "theme": "light",
+      "accent": "#0a84ff",
+      "createdAt": "2026-06-01T15:40:06.467Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "136581b5ce6f8d613f166d2f92f112eec05f707af1fc1615b3a87645b4a1a1dc",
+      "userId": "9edaf015-1702-44be-b7b6-fd292a1f533e",
+      "createdAt": "2026-05-24T02:23:34.715Z"
+    },
+    {
+      "token": "18dd1d0c12106d1876d4d4406b6b9b71dd6fada8de55558e5fc9f4ef616473f4",
+      "userId": "2c49f061-269a-496a-b57b-bfae07dd091d",
+      "createdAt": "2026-05-24T02:26:37.498Z"
+    }
+  ],
+  "mails": [
+    {
+      "id": "943c197d-6e41-492c-af59-be989e63c609",
+      "sourceId": "ec7fd619-8b73-4273-a557-ee2c38e0ef29",
+      "ownerId": "5a1e123a-c335-4d01-a43f-7d02202da9b3",
+      "folder": "outbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "demo@aerobox.com"
+      ],
+      "subject": "Welcome to AeroBox",
+      "body": "Welcome to AeroBox Mail. This workspace supports real-time chat, inbox/outbox/drafts, starred mail, and profile settings.",
+      "preview": "Welcome to AeroBox Mail. This workspace supports real-time chat, inbox/outbox/drafts, starred mail, and profile settings.",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-24T02:20:55.645Z",
+      "updatedAt": "2026-05-24T02:20:55.645Z"
+    },
+    {
+      "id": "fd108db6-7871-434c-8a82-046df0b06f72",
+      "sourceId": "ec7fd619-8b73-4273-a557-ee2c38e0ef29",
+      "ownerId": "bb33f185-bca3-4c8f-866c-aa6aac81d8c1",
+      "folder": "inbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "demo@aerobox.com"
+      ],
+      "subject": "Welcome to AeroBox",
+      "body": "Welcome to AeroBox Mail. This workspace supports real-time chat, inbox/outbox/drafts, starred mail, and profile settings.",
+      "preview": "Welcome to AeroBox Mail. This workspace supports real-time chat, inbox/outbox/drafts, starred mail, and profile settings.",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-24T02:20:55.645Z",
+      "updatedAt": "2026-06-01T15:39:01.821Z"
+    },
+    {
+      "id": "991dce97-f0fc-43a2-922c-0184bc1fc3e7",
+      "sourceId": "6ee51c2a-0090-49d1-b2b5-7f5b33cea57f",
+      "ownerId": "5a1e123a-c335-4d01-a43f-7d02202da9b3",
+      "folder": "outbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "testuserx@aerobox.com"
+      ],
+      "subject": "Your AeroBox account is ready",
+      "body": "Hi Test User, your new mailbox testuserx@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "preview": "Hi Test User, your new mailbox testuserx@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-24T02:23:34.714Z",
+      "updatedAt": "2026-05-24T02:23:34.714Z"
+    },
+    {
+      "id": "b5bd0316-a4c8-467e-b4c0-374abe410dea",
+      "sourceId": "6ee51c2a-0090-49d1-b2b5-7f5b33cea57f",
+      "ownerId": "9edaf015-1702-44be-b7b6-fd292a1f533e",
+      "folder": "inbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "testuserx@aerobox.com"
+      ],
+      "subject": "Your AeroBox account is ready",
+      "body": "Hi Test User, your new mailbox testuserx@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "preview": "Hi Test User, your new mailbox testuserx@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "read": false,
+      "starred": false,
+      "createdAt": "2026-05-24T02:23:34.714Z",
+      "updatedAt": "2026-05-24T02:23:34.714Z"
+    },
+    {
+      "id": "7f3230db-2a3f-41cf-b6d3-b640119725d3",
+      "sourceId": "2b5cc38b-e289-4659-96de-6980213a1505",
+      "ownerId": "5a1e123a-c335-4d01-a43f-7d02202da9b3",
+      "folder": "outbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "rutujmorey7@aerobox.com"
+      ],
+      "subject": "Your AeroBox account is ready",
+      "body": "Hi Rutuj Morey, your new mailbox rutujmorey7@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "preview": "Hi Rutuj Morey, your new mailbox rutujmorey7@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-24T02:23:44.057Z",
+      "updatedAt": "2026-05-24T02:23:44.057Z"
+    },
+    {
+      "id": "ddc7df89-8c96-4aac-87ca-7cd8c38b7580",
+      "sourceId": "2b5cc38b-e289-4659-96de-6980213a1505",
+      "ownerId": "4dd3aeb7-6276-4798-9817-bda7efa1091c",
+      "folder": "inbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "rutujmorey7@aerobox.com"
+      ],
+      "subject": "Your AeroBox account is ready",
+      "body": "Hi Rutuj Morey, your new mailbox rutujmorey7@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "preview": "Hi Rutuj Morey, your new mailbox rutujmorey7@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-24T02:23:44.057Z",
+      "updatedAt": "2026-05-24T03:14:36.319Z"
+    },
+    {
+      "id": "0ac1fa56-dbbb-4f8b-b3eb-630cf21b9487",
+      "sourceId": "81bee7cf-d179-4bfc-971f-c31d7b1ef129",
+      "ownerId": "5a1e123a-c335-4d01-a43f-7d02202da9b3",
+      "folder": "outbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "testtwox@aerobox.com"
+      ],
+      "subject": "Your AeroBox account is ready",
+      "body": "Hi Test Two, your new mailbox testtwox@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "preview": "Hi Test Two, your new mailbox testtwox@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-24T02:26:37.498Z",
+      "updatedAt": "2026-05-24T02:26:37.498Z"
+    },
+    {
+      "id": "50b4bdb1-c2fc-42d5-8f34-d22676494afa",
+      "sourceId": "81bee7cf-d179-4bfc-971f-c31d7b1ef129",
+      "ownerId": "2c49f061-269a-496a-b57b-bfae07dd091d",
+      "folder": "inbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "testtwox@aerobox.com"
+      ],
+      "subject": "Your AeroBox account is ready",
+      "body": "Hi Test Two, your new mailbox testtwox@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "preview": "Hi Test Two, your new mailbox testtwox@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "read": false,
+      "starred": false,
+      "createdAt": "2026-05-24T02:26:37.498Z",
+      "updatedAt": "2026-05-24T02:26:37.498Z"
+    },
+    {
+      "id": "480739cc-2c87-475c-b3a9-72966a8525f3",
+      "sourceId": "a343a478-aec8-47b8-882c-dede22add223",
+      "ownerId": "4dd3aeb7-6276-4798-9817-bda7efa1091c",
+      "folder": "inbox",
+      "from": "rutujmorey7@aerobox.com",
+      "to": [
+        "team@aerobox.com"
+      ],
+      "subject": "i am new",
+      "body": "i am rutuj morey who make aerobox and now testing it",
+      "preview": "i am rutuj morey who make aerobox and now testing it",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-24T02:34:03.301Z",
+      "updatedAt": "2026-05-29T16:03:45.708Z"
+    },
+    {
+      "id": "b065cc01-271a-47ae-8c48-11e11ece0439",
+      "sourceId": "a343a478-aec8-47b8-882c-dede22add223",
+      "ownerId": "5a1e123a-c335-4d01-a43f-7d02202da9b3",
+      "folder": "inbox",
+      "from": "rutujmorey7@aerobox.com",
+      "to": [
+        "team@aerobox.com"
+      ],
+      "subject": "i am new",
+      "body": "i am rutuj morey who make aerobox and now testing it",
+      "preview": "i am rutuj morey who make aerobox and now testing it",
+      "read": false,
+      "starred": false,
+      "createdAt": "2026-05-24T02:34:03.301Z",
+      "updatedAt": "2026-05-24T02:34:03.301Z"
+    },
+    {
+      "id": "86f05f7d-79a6-4748-8def-12b27a5ecfcf",
+      "sourceId": "4a0d5135-9193-4ccc-bdb4-8f688aec9902",
+      "ownerId": "5a1e123a-c335-4d01-a43f-7d02202da9b3",
+      "folder": "outbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "rutujmorey7@aerobox.com"
+      ],
+      "subject": "Aerolite Word sign-in OTP",
+      "body": "Your Aerolite Word sign-in OTP is 749837.\n\nThis code expires at 5/29/2026, 9:37:28 PM.\n\nIf you did not request this code, you can ignore this message.",
+      "preview": "Your Aerolite Word sign-in OTP is 749837. This code expires at 5/29/2026, 9:37:28 PM. If you did not request this code, you can ignore this ",
+      "category": "social",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-29T16:02:28.528Z",
+      "updatedAt": "2026-05-29T16:02:28.528Z"
+    },
+    {
+      "id": "428b4dd9-844b-4bb3-abae-f25fd2c11182",
+      "sourceId": "4a0d5135-9193-4ccc-bdb4-8f688aec9902",
+      "ownerId": "4dd3aeb7-6276-4798-9817-bda7efa1091c",
+      "folder": "inbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "rutujmorey7@aerobox.com"
+      ],
+      "subject": "Aerolite Word sign-in OTP",
+      "body": "Your Aerolite Word sign-in OTP is 749837.\n\nThis code expires at 5/29/2026, 9:37:28 PM.\n\nIf you did not request this code, you can ignore this message.",
+      "preview": "Your Aerolite Word sign-in OTP is 749837. This code expires at 5/29/2026, 9:37:28 PM. If you did not request this code, you can ignore this ",
+      "category": "social",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-29T16:02:28.528Z",
+      "updatedAt": "2026-05-31T11:50:25.025Z"
+    },
+    {
+      "id": "f1ddad8f-e6c9-45c9-b5c1-ce21804da6c5",
+      "sourceId": "fcd3159b-2ce6-4aa6-81b6-b5221a461a62",
+      "ownerId": "5a1e123a-c335-4d01-a43f-7d02202da9b3",
+      "folder": "outbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "rutujmorey7@aerobox.com"
+      ],
+      "subject": "Aerolite Word sign-in OTP",
+      "body": "Your Aerolite Word sign-in OTP is 710654.\n\nThis code expires at 5/29/2026, 9:38:32 PM.\n\nIf you did not request this code, you can ignore this message.",
+      "preview": "Your Aerolite Word sign-in OTP is 710654. This code expires at 5/29/2026, 9:38:32 PM. If you did not request this code, you can ignore this ",
+      "category": "social",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-29T16:03:32.411Z",
+      "updatedAt": "2026-05-29T16:03:32.411Z"
+    },
+    {
+      "id": "6ab89938-5ecc-4119-9c67-a9681774c25b",
+      "sourceId": "fcd3159b-2ce6-4aa6-81b6-b5221a461a62",
+      "ownerId": "4dd3aeb7-6276-4798-9817-bda7efa1091c",
+      "folder": "inbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "rutujmorey7@aerobox.com"
+      ],
+      "subject": "Aerolite Word sign-in OTP",
+      "body": "Your Aerolite Word sign-in OTP is 710654.\n\nThis code expires at 5/29/2026, 9:38:32 PM.\n\nIf you did not request this code, you can ignore this message.",
+      "preview": "Your Aerolite Word sign-in OTP is 710654. This code expires at 5/29/2026, 9:38:32 PM. If you did not request this code, you can ignore this ",
+      "category": "social",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-29T16:03:32.411Z",
+      "updatedAt": "2026-05-31T11:50:23.602Z"
+    },
+    {
+      "id": "2c94168a-c7c1-4726-a40a-c314515fc5d4",
+      "sourceId": "20d1ad2a-4a0a-44a6-a1a4-3f00499cc39c",
+      "ownerId": "5a1e123a-c335-4d01-a43f-7d02202da9b3",
+      "folder": "outbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "rutujmorey7@aerobox.com"
+      ],
+      "subject": "Aerolite Word sign-in OTP",
+      "body": "Your Aerolite Word sign-in OTP is 436581.\n\nThis code expires at 5/29/2026, 9:40:05 PM.\n\nIf you did not request this code, you can ignore this message.",
+      "preview": "Your Aerolite Word sign-in OTP is 436581. This code expires at 5/29/2026, 9:40:05 PM. If you did not request this code, you can ignore this ",
+      "category": "social",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-29T16:05:05.769Z",
+      "updatedAt": "2026-05-29T16:05:05.769Z"
+    },
+    {
+      "id": "d07eafe0-e0b9-4b17-98db-656633c34113",
+      "sourceId": "20d1ad2a-4a0a-44a6-a1a4-3f00499cc39c",
+      "ownerId": "4dd3aeb7-6276-4798-9817-bda7efa1091c",
+      "folder": "inbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "rutujmorey7@aerobox.com"
+      ],
+      "subject": "Aerolite Word sign-in OTP",
+      "body": "Your Aerolite Word sign-in OTP is 436581.\n\nThis code expires at 5/29/2026, 9:40:05 PM.\n\nIf you did not request this code, you can ignore this message.",
+      "preview": "Your Aerolite Word sign-in OTP is 436581. This code expires at 5/29/2026, 9:40:05 PM. If you did not request this code, you can ignore this ",
+      "category": "social",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-05-29T16:05:05.769Z",
+      "updatedAt": "2026-05-29T16:05:19.276Z"
+    },
+    {
+      "id": "e51e631f-efcc-49f0-b38f-2049d75c82c0",
+      "sourceId": "ddc07311-8843-4258-99cc-8fff4e1458f5",
+      "ownerId": "5a1e123a-c335-4d01-a43f-7d02202da9b3",
+      "folder": "outbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "xys@aerobox.com"
+      ],
+      "subject": "Your AeroBox account is ready",
+      "body": "Hi Xyx, your new mailbox xys@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "preview": "Hi Xyx, your new mailbox xys@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "category": "social",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-06-01T15:40:06.467Z",
+      "updatedAt": "2026-06-01T15:40:06.467Z"
+    },
+    {
+      "id": "079a0196-49d3-493b-8b57-fb5de653738d",
+      "sourceId": "ddc07311-8843-4258-99cc-8fff4e1458f5",
+      "ownerId": "5ecb5034-cc2c-4089-82e8-9e3c17393e83",
+      "folder": "inbox",
+      "from": "team@aerobox.com",
+      "to": [
+        "xys@aerobox.com"
+      ],
+      "subject": "Your AeroBox account is ready",
+      "body": "Hi Xyx, your new mailbox xys@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "preview": "Hi Xyx, your new mailbox xys@aerobox.com is active. Compose your first message and invite teammates into realtime chat.",
+      "category": "social",
+      "read": true,
+      "starred": false,
+      "createdAt": "2026-06-01T15:40:06.468Z",
+      "updatedAt": "2026-06-01T15:41:49.888Z"
+    }
+  ],
+  "chats": [
+    {
+      "id": "723aa8ea-5d3e-4cad-926e-38f3849687c8",
+      "senderId": "5a1e123a-c335-4d01-a43f-7d02202da9b3",
+      "body": "Welcome everyone. Use this space for quick team conversations.",
+      "createdAt": "2026-05-24T02:20:55.645Z"
+    },
+    {
+      "id": "868c012a-86e3-4517-85a2-e8978ff5ac72",
+      "senderId": "bb33f185-bca3-4c8f-866c-aa6aac81d8c1",
+      "body": "Realtime chat is live. Inbox + Outbox + Drafts are ready too.",
+      "createdAt": "2026-05-24T02:20:55.645Z"
+    },
+    {
+      "id": "8166409f-c869-4628-a03c-d1c1d1dda287",
+      "senderId": "4dd3aeb7-6276-4798-9817-bda7efa1091c",
+      "body": "hi",
+      "createdAt": "2026-05-24T02:25:30.269Z"
+    },
+    {
+      "id": "50bb3beb-69aa-445e-952a-ebc5f8843c2b",
+      "senderId": "4dd3aeb7-6276-4798-9817-bda7efa1091c",
+      "body": "hello",
+      "createdAt": "2026-05-24T03:15:03.375Z"
+    },
+    {
+      "id": "2e9e375b-7518-4835-becc-2481e34f4325",
+      "senderId": "4dd3aeb7-6276-4798-9817-bda7efa1091c",
+      "body": "whats up",
+      "createdAt": "2026-05-31T11:50:44.874Z"
+    },
+    {
+      "id": "d77e32ae-bd4b-4f9e-b1a5-4eade2070976",
+      "senderId": "5ecb5034-cc2c-4089-82e8-9e3c17393e83",
+      "body": "hello guyes",
+      "createdAt": "2026-06-01T15:40:17.475Z"
+    },
+    {
+      "id": "5e907eb3-452a-45bc-980c-336aca5cfff8",
+      "senderId": "5ecb5034-cc2c-4089-82e8-9e3c17393e83",
+      "body": "what the hell",
+      "createdAt": "2026-06-01T15:41:08.365Z"
+    },
+    {
+      "id": "78b97cb7-5fdc-413b-8102-f29ae787fc67",
+      "senderId": "5ecb5034-cc2c-4089-82e8-9e3c17393e83",
+      "body": "hi",
+      "createdAt": "2026-06-01T15:41:16.769Z"
+    }
+  ]
+}
