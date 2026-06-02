@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroBox Email</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+  <div id="splash-screen" class="screen splash-screen">
+    <div class="splash-mark">
+      <div class="splash-logo">A</div>
+      <div>
+        <p>AeroBox</p>
+        <h1>Email</h1>
+      </div>
+    </div>
+    <div class="splash-loader"><span></span></div>
+    <p class="splash-note">Starting secure AeroBox identity...</p>
+  </div>
+
+  <div id="auth-shell" class="screen auth-screen hidden">
+    <section class="auth-hero">
+      <div class="auth-logo">A</div>
+      <p class="eyebrow">AeroBox Identity</p>
+      <h2>Sign in to your private AeroBox email</h2>
+      <p>Use a real local mailbox with inbox, sent mail, drafts, categories, chat, profile settings, and persistent account login.</p>
+      <div class="auth-stats">
+        <span>Realtime</span>
+        <span>Secure login</span>
+        <span>@aerobox.com</span>
+      </div>
+    </section>
+
+    <section class="auth-panel">
+      <div class="auth-tabs" role="tablist" aria-label="Authentication tabs">
+        <button id="signin-tab" class="auth-tab active" type="button">Sign in</button>
+        <button id="signup-tab" class="auth-tab" type="button">Create account</button>
+      </div>
+
+      <form id="signin-form" class="auth-form">
+        <label>Email or handle
+          <input id="signin-email" type="text" placeholder="demo or demo@aerobox.com" autocomplete="username" required>
+        </label>
+        <label>Password
+          <input id="signin-password" type="password" placeholder="Password" autocomplete="current-password" required>
+        </label>
+        <button class="primary-btn full-btn" type="submit">Continue to AeroBox</button>
+        <p class="demo-help">Demo account: <strong>demo@aerobox.com</strong> / <strong>demo123</strong></p>
+      </form>
+
+      <form id="signup-form" class="auth-form hidden">
+        <label>Display name
+          <input id="signup-name" type="text" placeholder="Your full name" autocomplete="name" required>
+        </label>
+        <label>Handle
+          <input id="signup-handle" type="text" placeholder="yourname" autocomplete="username" required>
+        </label>
+        <p class="hint" id="handle-preview">Your email: yourname@aerobox.com</p>
+        <label>Password
+          <input id="signup-password" type="password" placeholder="At least 6 characters" autocomplete="new-password" required>
+        </label>
+        <button class="primary-btn full-btn" type="submit">Create AeroBox Email</button>
+      </form>
+    </section>
+  </div>
+
+  <div id="app-shell" class="hidden">
+    <header class="topbar">
+      <div class="brand-group">
+        <button id="sidebar-toggle" class="icon-btn" type="button" title="Main menu">☰</button>
+        <div class="app-logo">A</div>
+        <div>
+          <p>AeroBox</p>
+          <strong>Email</strong>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <span>⌕</span>
+        <input id="mail-search" type="search" placeholder="Search mail">
+      </div>
+
+      <div class="top-actions">
+        <button id="refresh-btn" class="icon-btn" type="button" title="Refresh">↻</button>
+        <button id="open-profile-btn" class="profile-chip" type="button">
+          <span id="header-avatar">AB</span>
+          <strong id="header-name">AeroBox User</strong>
+        </button>
+        <button id="logout-btn" class="icon-btn danger-icon" type="button" title="Sign out">⏻</button>
+      </div>
+    </header>
+
+    <main class="mail-layout">
+      <aside id="sidebar" class="left-nav">
+        <button id="compose-btn" class="compose-btn" type="button"><span>＋</span> Compose</button>
+
+        <nav class="folder-nav" aria-label="Mail folders">
+          <button class="folder-btn active" data-folder="inbox" type="button"><span>Inbox</span><strong id="count-inbox">0</strong></button>
+          <button class="folder-btn" data-folder="starred" type="button"><span>Starred</span><strong id="count-starred">0</strong></button>
+          <button class="folder-btn" data-folder="sent" type="button"><span>Sent</span><strong id="count-sent">0</strong></button>
+          <button class="folder-btn" data-folder="drafts" type="button"><span>Drafts</span><strong id="count-drafts">0</strong></button>
+          <button class="folder-btn" data-folder="archive" type="button"><span>Archive</span><strong id="count-archive">0</strong></button>
+          <button class="folder-btn" data-folder="spam" type="button"><span>Spam</span><strong id="count-spam">0</strong></button>
+          <button class="folder-btn" data-folder="trash" type="button"><span>Trash</span><strong id="count-trash">0</strong></button>
+        </nav>
+
+        <div class="nav-section-title">Meet & chat</div>
+        <button id="open-chat-btn" class="folder-btn utility-btn" type="button"><span>Workspace Chat</span><strong>Live</strong></button>
+
+        <div class="sidebar-user">
+          <div class="avatar" id="sidebar-avatar">AB</div>
+          <div>
+            <strong id="sidebar-user-name">AeroBox User</strong>
+            <small id="sidebar-user-email">user@aerobox.com</small>
+          </div>
+        </div>
+      </aside>
+
+      <section class="mail-surface">
+        <div class="category-tabs" id="category-tabs">
+          <button class="category-tab active" data-category="primary" type="button"><span>Primary</span><strong id="count-primary">0</strong></button>
+          <button class="category-tab" data-category="social" type="button"><span>Social</span><strong id="count-social">0</strong></button>
+          <button class="category-tab" data-category="promotions" type="button"><span>Promotions</span><strong id="count-promotions">0</strong></button>
+          <button class="category-tab" data-category="updates" type="button"><span>Updates</span><strong id="count-updates">0</strong></button>
+        </div>
+
+        <div class="mail-toolbar">
+          <div>
+            <h2 id="folder-title">Inbox</h2>
+            <span id="mail-count-caption">0 messages</span>
+          </div>
+          <div class="toolbar-actions">
+            <button id="mark-unread-btn" class="ghost-btn" type="button">Mark unread</button>
+            <button id="archive-btn" class="ghost-btn" type="button">Archive</button>
+            <button id="spam-btn" class="ghost-btn" type="button">Report spam</button>
+          </div>
+        </div>
+
+        <div class="mail-content">
+          <section id="mail-list" class="mail-list" aria-label="Email list"></section>
+          <section id="mail-detail" class="mail-detail empty">
+            <div>
+              <h3>Select an email</h3>
+              <p>Open a message to read, reply, star, archive, report spam, or move it.</p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <aside class="right-rail">
+        <section class="mini-panel">
+          <h3>Account</h3>
+          <p id="account-email">user@aerobox.com</p>
+          <div class="quick-metrics">
+            <span><strong id="metric-unread">0</strong> unread</span>
+            <span><strong id="metric-total">0</strong> shown</span>
+          </div>
+        </section>
+
+        <section class="chat-panel" id="chat-panel">
+          <header>
+            <div>
+              <h3>Workspace Chat</h3>
+              <p>Realtime channel</p>
+            </div>
+          </header>
+          <div id="chat-messages" class="chat-messages"></div>
+          <form id="chat-form" class="chat-form">
+            <input id="chat-input" type="text" placeholder="Message" maxlength="500">
+            <button class="primary-btn" type="submit">Send</button>
+          </form>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <div id="compose-modal" class="modal hidden">
+    <section class="compose-card">
+      <header>
+        <h3 id="compose-title">New Message</h3>
+        <div>
+          <button id="minimize-compose" class="icon-btn" type="button" title="Minimize">−</button>
+          <button id="close-compose" class="icon-btn" type="button" title="Close">×</button>
+        </div>
+      </header>
+      <label>To
+        <input id="compose-to" type="text" placeholder="friend@aerobox.com">
+      </label>
+      <label>Subject
+        <input id="compose-subject" type="text" placeholder="Subject">
+      </label>
+      <textarea id="compose-body" rows="12" placeholder="Write your email"></textarea>
+      <footer>
+        <button id="send-mail-btn" class="primary-btn" type="button">Send</button>
+        <button id="save-draft-btn" class="ghost-btn" type="button">Save draft</button>
+      </footer>
+    </section>
+  </div>
+
+  <div id="profile-drawer" class="drawer hidden">
+    <section class="drawer-card">
+      <header>
+        <h3>AeroBox settings</h3>
+        <button id="close-profile-btn" class="icon-btn" type="button" title="Close">×</button>
+      </header>
+      <form id="profile-form" class="drawer-form">
+        <label>Display name
+          <input id="profile-name" type="text" required>
+        </label>
+        <label>Email address
+          <input id="profile-email" type="text" disabled>
+        </label>
+        <label>Bio
+          <textarea id="profile-bio" rows="4" maxlength="200"></textarea>
+        </label>
+        <label>Theme
+          <select id="profile-theme">
+            <option value="light">Light</option>
+            <option value="dusk">Dusk</option>
+          </select>
+        </label>
+        <button class="primary-btn" type="submit">Save settings</button>
+      </form>
+    </section>
+  </div>
+
+  <div id="toast-root" class="toast-root"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
